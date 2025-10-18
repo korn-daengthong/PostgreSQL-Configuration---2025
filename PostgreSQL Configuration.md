@@ -218,10 +218,15 @@ SHOW hba_file;
 SHOW data_directory;
 
 ### บันทึกผลการทดลอง
-```
+
+<img width="936" height="492" alt="image" src="https://github.com/user-attachments/assets/3bf66bfe-a50c-4078-b70e-0a99f039ea73" />
+
 1. ตำแหน่งที่อยู่ของไฟล์ configuration อยู่ที่ตำแหน่งใด
+= /var/lib/postgresql/data/postgresql.conf
 2. ตำแหน่งที่อยู่ของไฟล์ data อยู่ที่ตำแหน่งใด
-```
+= /var/lib/postgresql/data
+
+
 -- ตรวจสอบการตั้งค่าปัจจุบัน
 SELECT name, setting, unit, category, short_desc 
 FROM pg_settings 
